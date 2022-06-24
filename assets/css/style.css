@@ -1,0 +1,43 @@
+.app {
+  background: #f1f1f1;
+  display: grid;
+  grid-template-areas:
+    "encabezado"
+    "contenido"
+    "rodapie";
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto auto;
+}
+
+.encabezado {
+  background-color: rgb(13, 14, 14);
+  grid-template-areas: encabezado;
+  align-items: center;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.menu__link {
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+
+.menu__link:hover,
+.menu__link:active {
+  border-bottom: 2px solid rgb(87, 87, 241);
+}
+
+.contenido {
+  background-color: rgb(2, 2, 2);
+  grid-template-areas: contenido;
+  padding: 0 2rem;
+}
+
+.rodapie {
+  grid-template-areas: rodapie;
+  color: white;
+  background: linear-gradient(black, 70%, grey);
+  padding: 1rem;
+  text-align: center;
+}
